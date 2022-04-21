@@ -1,6 +1,5 @@
-# Challenge Selection Description - iOS Testing MiniBootcamp
+# Challenge Selection Description - iOS Testing MiniBootcamp 🚀📲
 
-## iOS Testing MiniBootcamp selection challenge 🚀📲
 Thank you for your interest in the iOS Testing MiniBootcamp 2022!
 
 This README file contains the instructions to complete the challenge to participate in the MiniBootcamp
