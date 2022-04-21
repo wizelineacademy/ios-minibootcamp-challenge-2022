@@ -13,27 +13,10 @@
 		9AA8DE8C2804972200C867C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA8DE8A2804972200C867C8 /* Main.storyboard */; };
 		9AA8DE8E2804972300C867C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA8DE8D2804972300C867C8 /* Assets.xcassets */; };
 		9AA8DE912804972300C867C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA8DE8F2804972300C867C8 /* LaunchScreen.storyboard */; };
-		9AA8DE9C2804972300C867C8 /* miniBootcampChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DE9B2804972300C867C8 /* miniBootcampChallengeTests.swift */; };
-		9AA8DEA62804972300C867C8 /* miniBootcampChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DEA52804972300C867C8 /* miniBootcampChallengeUITests.swift */; };
-		9AA8DEA82804972400C867C8 /* miniBootcampChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DEA72804972400C867C8 /* miniBootcampChallengeUITestsLaunchTests.swift */; };
+		9AA8DEB52804A2E100C867C8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DEB42804A2E100C867C8 /* ImageCell.swift */; };
+		9AA8DEB72804D91800C867C8 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AA8DEB62804D91800C867C8 /* Photos.plist */; };
+		9AEB34032805F07F00F764A6 /* URLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB34022805F07F00F764A6 /* URLProvider.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9AA8DE982804972300C867C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA8DE792804972200C867C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AA8DE802804972200C867C8;
-			remoteInfo = miniBootcampChallenge;
-		};
-		9AA8DEA22804972300C867C8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AA8DE792804972200C867C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AA8DE802804972200C867C8;
-			remoteInfo = miniBootcampChallenge;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9AA8DE812804972200C867C8 /* miniBootcampChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniBootcampChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,29 +27,13 @@
 		9AA8DE8D2804972300C867C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AA8DE902804972300C867C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AA8DE922804972300C867C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AA8DE972804972300C867C8 /* miniBootcampChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniBootcampChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA8DE9B2804972300C867C8 /* miniBootcampChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniBootcampChallengeTests.swift; sourceTree = "<group>"; };
-		9AA8DEA12804972300C867C8 /* miniBootcampChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = miniBootcampChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AA8DEA52804972300C867C8 /* miniBootcampChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniBootcampChallengeUITests.swift; sourceTree = "<group>"; };
-		9AA8DEA72804972400C867C8 /* miniBootcampChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniBootcampChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9AA8DEB42804A2E100C867C8 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		9AA8DEB62804D91800C867C8 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		9AEB34022805F07F00F764A6 /* URLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9AA8DE7E2804972200C867C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA8DE942804972300C867C8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA8DE9E2804972300C867C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				9AA8DE832804972200C867C8 /* miniBootcampChallenge */,
-				9AA8DE9A2804972300C867C8 /* miniBootcampChallengeTests */,
-				9AA8DEA42804972300C867C8 /* miniBootcampChallengeUITests */,
 				9AA8DE822804972200C867C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				9AA8DE812804972200C867C8 /* miniBootcampChallenge.app */,
-				9AA8DE972804972300C867C8 /* miniBootcampChallengeTests.xctest */,
-				9AA8DEA12804972300C867C8 /* miniBootcampChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,29 +65,15 @@
 				9AA8DE842804972200C867C8 /* AppDelegate.swift */,
 				9AA8DE862804972200C867C8 /* SceneDelegate.swift */,
 				9AA8DE882804972200C867C8 /* ViewController.swift */,
+				9AEB34022805F07F00F764A6 /* URLProvider.swift */,
+				9AA8DEB42804A2E100C867C8 /* ImageCell.swift */,
 				9AA8DE8A2804972200C867C8 /* Main.storyboard */,
 				9AA8DE8D2804972300C867C8 /* Assets.xcassets */,
 				9AA8DE8F2804972300C867C8 /* LaunchScreen.storyboard */,
+				9AA8DEB62804D91800C867C8 /* Photos.plist */,
 				9AA8DE922804972300C867C8 /* Info.plist */,
 			);
 			path = miniBootcampChallenge;
-			sourceTree = "<group>";
-		};
-		9AA8DE9A2804972300C867C8 /* miniBootcampChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-				9AA8DE9B2804972300C867C8 /* miniBootcampChallengeTests.swift */,
-			);
-			path = miniBootcampChallengeTests;
-			sourceTree = "<group>";
-		};
-		9AA8DEA42804972300C867C8 /* miniBootcampChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9AA8DEA52804972300C867C8 /* miniBootcampChallengeUITests.swift */,
-				9AA8DEA72804972400C867C8 /* miniBootcampChallengeUITestsLaunchTests.swift */,
-			);
-			path = miniBootcampChallengeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,42 +96,6 @@
 			productReference = 9AA8DE812804972200C867C8 /* miniBootcampChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9AA8DE962804972300C867C8 /* miniBootcampChallengeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9AA8DEAE2804972400C867C8 /* Build configuration list for PBXNativeTarget "miniBootcampChallengeTests" */;
-			buildPhases = (
-				9AA8DE932804972300C867C8 /* Sources */,
-				9AA8DE942804972300C867C8 /* Frameworks */,
-				9AA8DE952804972300C867C8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9AA8DE992804972300C867C8 /* PBXTargetDependency */,
-			);
-			name = miniBootcampChallengeTests;
-			productName = miniBootcampChallengeTests;
-			productReference = 9AA8DE972804972300C867C8 /* miniBootcampChallengeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9AA8DEA02804972300C867C8 /* miniBootcampChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9AA8DEB12804972400C867C8 /* Build configuration list for PBXNativeTarget "miniBootcampChallengeUITests" */;
-			buildPhases = (
-				9AA8DE9D2804972300C867C8 /* Sources */,
-				9AA8DE9E2804972300C867C8 /* Frameworks */,
-				9AA8DE9F2804972300C867C8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9AA8DEA32804972300C867C8 /* PBXTargetDependency */,
-			);
-			name = miniBootcampChallengeUITests;
-			productName = miniBootcampChallengeUITests;
-			productReference = 9AA8DEA12804972300C867C8 /* miniBootcampChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,14 +108,6 @@
 				TargetAttributes = {
 					9AA8DE802804972200C867C8 = {
 						CreatedOnToolsVersion = 13.2.1;
-					};
-					9AA8DE962804972300C867C8 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 9AA8DE802804972200C867C8;
-					};
-					9AA8DEA02804972300C867C8 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 9AA8DE802804972200C867C8;
 					};
 				};
 			};
@@ -220,8 +125,6 @@
 			projectRoot = "";
 			targets = (
 				9AA8DE802804972200C867C8 /* miniBootcampChallenge */,
-				9AA8DE962804972300C867C8 /* miniBootcampChallengeTests */,
-				9AA8DEA02804972300C867C8 /* miniBootcampChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +137,7 @@
 				9AA8DE912804972300C867C8 /* LaunchScreen.storyboard in Resources */,
 				9AA8DE8E2804972300C867C8 /* Assets.xcassets in Resources */,
 				9AA8DE8C2804972200C867C8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA8DE952804972300C867C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA8DE9F2804972300C867C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9AA8DEB72804D91800C867C8 /* Photos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,42 +149,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA8DE892804972200C867C8 /* ViewController.swift in Sources */,
+				9AA8DEB52804A2E100C867C8 /* ImageCell.swift in Sources */,
+				9AEB34032805F07F00F764A6 /* URLProvider.swift in Sources */,
 				9AA8DE852804972200C867C8 /* AppDelegate.swift in Sources */,
 				9AA8DE872804972200C867C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9AA8DE932804972300C867C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AA8DE9C2804972300C867C8 /* miniBootcampChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA8DE9D2804972300C867C8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AA8DEA82804972400C867C8 /* miniBootcampChallengeUITestsLaunchTests.swift in Sources */,
-				9AA8DEA62804972300C867C8 /* miniBootcampChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9AA8DE992804972300C867C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9AA8DE802804972200C867C8 /* miniBootcampChallenge */;
-			targetProxy = 9AA8DE982804972300C867C8 /* PBXContainerItemProxy */;
-		};
-		9AA8DEA32804972300C867C8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9AA8DE802804972200C867C8 /* miniBootcampChallenge */;
-			targetProxy = 9AA8DEA22804972300C867C8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9AA8DE8A2804972200C867C8 /* Main.storyboard */ = {
@@ -486,78 +348,6 @@
 			};
 			name = Release;
 		};
-		9AA8DEAF2804972400C867C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.miniBootcampChallengeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniBootcampChallenge.app/miniBootcampChallenge";
-			};
-			name = Debug;
-		};
-		9AA8DEB02804972400C867C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.miniBootcampChallengeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/miniBootcampChallenge.app/miniBootcampChallenge";
-			};
-			name = Release;
-		};
-		9AA8DEB22804972400C867C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.miniBootcampChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = miniBootcampChallenge;
-			};
-			name = Debug;
-		};
-		9AA8DEB32804972400C867C8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = wizeline.miniBootcampChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = miniBootcampChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,24 +365,6 @@
 			buildConfigurations = (
 				9AA8DEAC2804972400C867C8 /* Debug */,
 				9AA8DEAD2804972400C867C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9AA8DEAE2804972400C867C8 /* Build configuration list for PBXNativeTarget "miniBootcampChallengeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9AA8DEAF2804972400C867C8 /* Debug */,
-				9AA8DEB02804972400C867C8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9AA8DEB12804972400C867C8 /* Build configuration list for PBXNativeTarget "miniBootcampChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9AA8DEB22804972400C867C8 /* Debug */,
-				9AA8DEB32804972400C867C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

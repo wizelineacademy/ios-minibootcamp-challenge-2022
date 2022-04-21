@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  miniBootcampChallenge
 //
-//  Created by Abner Castro on 11/04/22.
-//
 
 import UIKit
 
