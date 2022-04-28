@@ -27,6 +27,9 @@ We don’t want to limit you by providing some fill-in-the-blanks exercises. Ins
 
 We hope you find this exercise challenging and engaging.
 
+![Simulator Screen Shot - iPhone 12 mini - 2022-04-28 at 13 31 39](https://user-images.githubusercontent.com/103285773/165822469-7e755b70-b2b8-4bb4-ad8c-0f70722f350e.png)
+
+
 ### Challenge 1:
 The app loads images from the web and displays them in a UICollectionView, but the behavior of the UI is weird and it’s freezing 😵‍💫
 
