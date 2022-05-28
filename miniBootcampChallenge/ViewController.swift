@@ -15,20 +15,67 @@ class ViewController: UICollectionViewController {
         static var cellSize: CGFloat?
     }
     
-    private lazy var urls: [URL] = URLProvider.urls
+    lazy var urls: [URL] = URLProvider.urls
+    let activityView = UIActivityIndicatorView(style: .large)
+    var fetchedImages:[URL:UIImage] = [:]
+    let group = DispatchGroup()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Constants.title
     }
-
+    // Used viewDidAppear to show the activity indicator because with the willAppear and DidLoad didn't work well
+    override func viewDidAppear(_ animated: Bool) {
+        showActivityIndicatory()
+        waitDownload()
+    }
+    private func showActivityIndicatory() {
+       activityView.center = self.view.center
+       self.view.addSubview(activityView)
+       activityView.startAnimating()
+    }
+    
 
 }
 
 
 // TODO: 1.- Implement a function that allows the app downloading the images without freezing the UI or causing it to work unexpected way
-
+private func fethImage(url:URL, completion: @escaping(UIImage?)->Void) {
+    URLSession.shared.dataTask(with: url) { (data,response,error) in
+        
+        if error != nil && data == nil {
+            print(error as Any)
+            return
+        }
+        
+        let image = UIImage(data: (data as Data?)!)
+        
+        DispatchQueue.main.async {
+            completion(image)
+        }
+        
+        
+    }.resume()
+}
 // TODO: 2.- Implement a function that allows to fill the collection view only when all photos have been downloaded, adding an animation for waiting the completion of the task.
+extension ViewController {
+    private func waitDownload() {
+        
+        for url in urls {
+            self.group.enter()
+            fethImage(url: url, completion: { image in
+                self.fetchedImages[url] = image
+                self.group.leave()
+            })
+        }
+        group.notify(queue: .main) {
+            print(self.fetchedImages)
+            self.activityView.stopAnimating()
+            self.collectionView.reloadData()
+            
+        }
+    }
+}
 
 
 // MARK: - UICollectionView DataSource, Delegate
@@ -41,9 +88,12 @@ extension ViewController {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellID, for: indexPath) as? ImageCell else { return UICollectionViewCell() }
         
         let url = urls[indexPath.row]
-        let data = try? Data(contentsOf: url)
-        let image = UIImage(data: data!)
-        cell.display(image)
+        
+//        fethImage(url: url) { image in
+//            cell.display(image)
+//        }
+        
+        cell.display(self.fetchedImages[url])
         
         return cell
     }
