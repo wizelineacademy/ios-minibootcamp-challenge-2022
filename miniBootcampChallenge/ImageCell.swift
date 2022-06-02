@@ -14,7 +14,12 @@ class ImageCell: UICollectionViewCell {
         imageView.image = nil
     }
     
-    func display(_ image: UIImage?) {
-        imageView.image = image
+    func display(_ image: UIImage? = nil) {
+        if let image = image {
+            imageView.stopLoader()
+            imageView.image = image
+        } else {
+            imageView.showLoader()
+        }
     }
 }

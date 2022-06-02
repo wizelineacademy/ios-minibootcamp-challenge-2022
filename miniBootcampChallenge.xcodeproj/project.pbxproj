@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6530B9482848173800C2854C /* UIImageView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530B9472848173800C2854C /* UIImageView+Loader.swift */; };
+		6530B94A2848184600C2854C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530B9492848184600C2854C /* ViewModel.swift */; };
 		9AA8DE852804972200C867C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DE842804972200C867C8 /* AppDelegate.swift */; };
 		9AA8DE872804972200C867C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DE862804972200C867C8 /* SceneDelegate.swift */; };
 		9AA8DE892804972200C867C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA8DE882804972200C867C8 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6530B9472848173800C2854C /* UIImageView+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Loader.swift"; sourceTree = "<group>"; };
+		6530B9492848184600C2854C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9AA8DE812804972200C867C8 /* miniBootcampChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniBootcampChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA8DE842804972200C867C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA8DE862804972200C867C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6530B9462848171800C2854C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6530B9472848173800C2854C /* UIImageView+Loader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9AA8DE782804972200C867C8 = {
 			isa = PBXGroup;
 			children = (
@@ -62,9 +74,11 @@
 		9AA8DE832804972200C867C8 /* miniBootcampChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				6530B9462848171800C2854C /* Extensions */,
 				9AA8DE842804972200C867C8 /* AppDelegate.swift */,
 				9AA8DE862804972200C867C8 /* SceneDelegate.swift */,
 				9AA8DE882804972200C867C8 /* ViewController.swift */,
+				6530B9492848184600C2854C /* ViewModel.swift */,
 				9AEB34022805F07F00F764A6 /* URLProvider.swift */,
 				9AA8DEB42804A2E100C867C8 /* ImageCell.swift */,
 				9AA8DE8A2804972200C867C8 /* Main.storyboard */,
@@ -153,6 +167,8 @@
 				9AEB34032805F07F00F764A6 /* URLProvider.swift in Sources */,
 				9AA8DE852804972200C867C8 /* AppDelegate.swift in Sources */,
 				9AA8DE872804972200C867C8 /* SceneDelegate.swift in Sources */,
+				6530B9482848173800C2854C /* UIImageView+Loader.swift in Sources */,
+				6530B94A2848184600C2854C /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
