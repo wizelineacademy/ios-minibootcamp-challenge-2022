@@ -16,20 +16,15 @@ class ViewController: UICollectionViewController {
     }
     
     private lazy var urls: [URL] = URLProvider.urls
+    private var viewModel = ViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Constants.title
+        viewModel.delegate = self
+        viewModel.fetchImages()
     }
-
-
 }
-
-
-// TODO: 1.- Implement a function that allows the app downloading the images without freezing the UI or causing it to work unexpected way
-
-// TODO: 2.- Implement a function that allows to fill the collection view only when all photos have been downloaded, adding an animation for waiting the completion of the task.
-
 
 // MARK: - UICollectionView DataSource, Delegate
 extension ViewController {
@@ -40,10 +35,11 @@ extension ViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.cellID, for: indexPath) as? ImageCell else { return UICollectionViewCell() }
         
-        let url = urls[indexPath.row]
-        let data = try? Data(contentsOf: url)
-        let image = UIImage(data: data!)
-        cell.display(image)
+        if !viewModel.photos.isEmpty {
+            cell.display(viewModel.photos[indexPath.row])
+        } else {
+            cell.display()
+        }
         
         return cell
     }
@@ -67,5 +63,17 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         Constants.cellSpacing
+    }
+}
+
+
+
+//MARK: ViewModel delegate function
+
+extension ViewController: ViewModelDelegate {
+    func didFinishLoadingImages() {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }
