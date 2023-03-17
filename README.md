@@ -39,18 +39,25 @@ Implement a function to download the images in a smoothly way that allows a good
 Could you implement a method to wait until all images are downloaded before to display all in the UICollectionView?
 You can complement that operation with an animation while waiting
 
-
-## Requirements ✅
-
-Implement the exercise number 1 & 2 completely.
-Keep the use of 3rd party libraries to the minimum.
-Please try implementing your own method to download images instead of using a downloader framework. If you use it, justify the use of it on the code.
-
 ## Getting Started
 We have provided an Xcode project in this repository. 
 You can implement your code directly on the codebase. Feel free to add, remove or change anything if you consider it necessary.
 
 Clone the repo in your local, and build & run. It builds and runs without any extra configuration or external dependency.
+
+## Requirements ✅
+Implement the exercise number 1 & 2 completely.
+Keep the use of 3rd party libraries to the minimum.
+Please try implementing your own method to download images instead of using a downloader framework. If you use it, justify the use of it on the code.
+
+## Rubric
+The developer must implement effectively both challenge in order to be consider a successful deliverable.
+It is not allowed to use 3rd party frameworks for animations, async functions, threading, etc. Everything must be done using exclusively the native Apple tools and resources.
+
+It´s a good practice to comment the code. Another thing to be considered is the use of comments so you can explain your thinking and logic through key comments in your code. It could be at the top of the functions you implement.
+
+And finally both solutions to the challenges must work independently; it means that the evaluator can switch between the implementation by just calling the function/s  or removing comments to see each result.
+
 
 ## Submitting the deliverables
 For submitting your work, you should follow these steps:
